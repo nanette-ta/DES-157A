@@ -30,13 +30,15 @@
     <script>
         // Program prompts users to guess food craving amongst three options (sushi, hot pot, and chicken bake). If the user guesses correctly, the background color dynamically changes to green. However, if they guess incorrectly or press enter without an input, the background color dynamically changes to red. If the user presses cancel, the background color will change to blue.
 
-        var userInput = prompt("What food am I craving from the following options:\nSushi, Hot Pot, Chicken Bake");
+        var userInput = prompt("What food am I craving from the following options:\nSushi, Hot Pot, Chicken Bake").toLowerCase();
 
         var foods = ['Sushi', 'Hot Pot', 'Chicken Bake'];
 
-        var randomFoodsArray = Math.floor(Math.random() * foods.length);
+        function getRandomFood (foods) {
+            return foods[Math.floor(Math.random() * foods.length)];
+        }
 
-        var randomFood = foods[randomFoodsArray];
+        var randomFood = getRandomFood(foods).toLowerCase();
 
         var userGuess = document.querySelector('h2');
 
