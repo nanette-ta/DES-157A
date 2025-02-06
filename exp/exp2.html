@@ -32,27 +32,27 @@
 
         var userInput = prompt("What food am I craving from the following options:\nSushi, Hot Pot, Chicken Bake");
 
-        var foods = ['Sushi', 'Hot Pot', 'Chicken Bake'];
+        // var foods = ['Sushi', 'Hot Pot', 'Chicken Bake'];
 
-        var randomFoodsArray = Math.floor(Math.random() * foods.length);
+        // var randomFoodsArray = Math.floor(Math.random() * foods.length);
 
-        var randomFood = foods[randomFoodsArray];
+        // var randomFood = foods[randomFoodsArray];
 
-        var userGuess = document.querySelector('h2');
+        // var userGuess = document.querySelector('h2');
 
-        for (var i = 0; i < foods.length; i++) {
-            if (userInput === randomFood) {
-                userGuess.innerHTML = `Wow, you guessed ${userInput}! I was craving that!`;
+        // for (var i = 0; i < foods.length; i++) {
+        //     if (userInput === randomFood) {
+        //         userGuess.innerHTML = `Wow, you guessed ${userInput}! I was craving that!`;
                 
-                document.querySelector("body").style.backgroundColor = "#8cf6e1";
-            } else if (userInput === null) {
-                document.querySelector("body").style.backgroundColor = "#a8e2ff";
-            } else {
-                userGuess.innerHTML = "Sadly, that is not my craving";
+        //         document.querySelector("body").style.backgroundColor = "#8cf6e1";
+        //     } else if (userInput === null) {
+        //         document.querySelector("body").style.backgroundColor = "#a8e2ff";
+        //     } else {
+        //         userGuess.innerHTML = "Sadly, that is not my craving";
 
-                document.querySelector("body").style.backgroundColor = "#f6a18c";
-            };
-        }
+        //         document.querySelector("body").style.backgroundColor = "#f6a18c";
+        //     };
+        // }
     </script>
 
 </body>
