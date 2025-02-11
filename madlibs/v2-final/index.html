@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlibs v1</title>
+    
+    <!-- Google Fonts -->
+    <!-- Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script> 
+</head>
+
+<body>
+    <main>
+        <section id="page1">
+            <header>
+                <h1>Miffy's Perfect Day.</h1>
+            </header>
+
+            <form>
+                <div id="card1" class="showing">
+                    <label for="dessert">Favorite Dessert</label>
+                    <input type="text" id="input1" placeholder="Type here..." required>
+                    <button class="next-btn" id="gotocard2">Next</button>
+                </div>
+
+                <div id="card2" class="hidden">
+                    <label for="title">Favorite Song Title</label>
+                    <input type="text" id="input2" placeholder="Type here..." required>
+                    <button class="next-btn" id="gotocard3">Next</button>
+                </div>
+
+                <div id="card3" class="hidden">
+                    <label for="artist">Favorite Song Artist</label>
+                    <input type="text" id="input3" placeholder="Type here..." required>
+                    <button class="next-btn" id="gotocard4">Next</button>
+                </div>
+
+                <div id="card4" class="hidden">
+                    <label for="city">Favorite City</label>
+                    <input type="text" id="input4" placeholder="Type here..." required>
+                    <button class="next-btn" id="gotocard5">Next</button>
+                </div>
+
+                <div id="card5" class="hidden">
+                    <label for="restaurant">Favorite Restaurant</label>
+                    <input type="text" id="input5" placeholder="Type here..." required>
+                    <button class="next-btn" id="gotocard6">Next</button>
+                </div>
+
+                <div id="card6" class="hidden">
+                    <label for="food">Favorite Food</label>
+                    <input type="text" id="input6" placeholder="Type here..." required>
+                    <input type="submit" value="Build Miffy's Perfect Day" id="gotopage2">
+                </div>  
+            </form>
+
+
+            <article>
+            </article>
+        </section>
+
+        <section id="page2" style.display="none">
+            <header>
+                <h1 class="pg2header">Miffy's Perfect Day</h2>
+            </header>
+
+            <div id="result">
+                <p>
+                    Miffy is a loving bunny who loves to eat in her free time. Her favorite food is <span id="dessert"></span> because it reminds her of home. 
+                </p>
+
+                <p>
+                    On the weekends, she loves to explore with her best friends, Melanie and Boris. While driving their car, they love to listen to <span id="song"></span> by "<span id="artist"></span>". Sometimes they explore cities like <span id="city"></span>. On other days, they explore local restaurants like <span id="restaurant"></span>. However, one thing is always the same. To end their perfect day, they would watch the sunset and eat <span id="food"></span> together. 
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
