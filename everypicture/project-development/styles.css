@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    height: 750px;
+    width: 1200px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 10px 0;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 520px;
+    padding: 40px 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+p {
+    font-family: serif;
+    font-size: 1.2rem;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
