@@ -1,0 +1,78 @@
+body {
+    background-image: url(./images/gameOnBackground.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    background-color: #FFF7EC;
+    gap: 100px;
+    border-radius: 20px;
+    padding: 40px 70px;
+}
+
+.healthbar {
+    width: 350px;
+    height: 30px;
+    background-color: #B0D099;
+    border: 1px solid #606060;
+    border-radius: 10px;
+}
+
+.player1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid #606060; */
+}
+
+.player2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid #606060; */
+}
+
+h1 {
+    margin: 0;
+    font-family: Silkscreen;
+    font-weight: 900;
+    font-size: 100px;
+    color: #ECC899;
+    text-shadow:
+    2px 2px 0px #606060,
+    -2px -2px 0px #606060,
+    2px -2px 0px #606060,
+    -2px 2px 0px #606060;
+    /* border: 1px solid #606060; */
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Silkscreen;
+    font-weight: 900;
+    font-size: 20px;
+    color: #DA8A79;
+    text-shadow:
+    1px 1px 0px #606060,
+    -1px -1px 0px #606060,
+    1px -1px 0px #606060,
+    -1px 1px 0px #606060;
+    /* border: 1px solid #606060; */
+
+}
+
+p {
+    margin: 0;
+    font-family: Silkscreen;
+    font-weight: 700;
+    color: #606060;
+}
