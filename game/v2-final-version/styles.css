@@ -1,0 +1,331 @@
+body {
+    font-family: Silkscreen;
+    color: #606060;
+    background-image: url(./images/gameOnBackground.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    height: 100vh;
+    /* border: 1px solid #606060; */
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+}
+
+img {
+    display: block;
+    height: auto;
+    margin-bottom: 30px;
+    /* border: 1px solid #606060; */
+}
+
+.vs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    /* border: 1px solid #606060; */
+}
+
+h1 {
+    margin: 0;
+    /* max-width: 1000px; */
+    font-weight: 900;
+    font-size: 50px;
+    color: #DA8A79;
+    text-shadow:
+    2px 2px 0px #606060,
+    -2px -2px 0px #606060,
+    2px -2px 0px #606060,
+    -2px 2px 0px #606060;
+    /* border: 1px solid #606060; */
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Silkscreen;
+    font-weight: 900;
+    font-size: 18px;
+    color: #DA8A79;
+    text-shadow:
+    1px 1px 0px #606060,
+    -1px -1px 0px #606060,
+    1px -1px 0px #606060,
+    -1px 1px 0px #606060;
+    /* border: 1px solid #606060; */
+}
+
+p {
+    margin: 0;
+    font-family: Silkscreen;
+    font-weight: 700;
+    color: #606060;
+    text-align: center;
+}
+
+#game {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 30px;
+    background-color: #FFF7EC;
+    border-radius: 20px;
+    /* border: 1px solid #606060; */
+}
+
+.player1 {
+    width: 33.33%;
+}
+
+.player2 {
+    width: 33.33%;
+}
+
+.health {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: #FFF7EC;
+    border: 1px solid #606060;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#healthbar0, #healthbar1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: #B0D099;
+    border: 1px solid #606060;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 930px;
+
+    text-align: center;
+    background-color: #FFF7EC;
+    border-radius: 20px;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#start {
+    background-color: #DA8A79;
+    font-family: Silkscreen;
+    color: #606060;
+    color: #FFF7EC;
+    border: 1px solid #606060;
+    border-radius: 5px;
+}
+
+#attack {
+    background-color:#DA8A79;
+    font-family: Silkscreen;
+    color: #606060;
+    color: #FFF7EC;
+    border: 1px solid #606060;
+    border-radius: 5px;
+}
+
+.buttons {
+    background-color:#DA8A79;
+    font-family: Silkscreen;
+    color: #606060;
+    color: #FFF7EC;
+    border: 1px solid #606060;
+    border-radius: 5px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* battle animations */
+
+.attack0 {
+    animation: veryweak 1s ease-in-out 2;
+}
+
+.attack1 {
+    animation: weak 1s ease-in-out 2;
+}
+
+.attack2 {
+    animation: medium 1s ease-in-out 2;
+}
+
+.attack3 {
+    animation: strong 1s ease-in-out 2;
+}
+
+.attack4 {
+    animation: massive 1s ease-in-out 2;
+}
+
+.defend2 {
+    animation: gobackward 2s ease-in-out 1;
+}
+
+.defend0 {
+    animation: shake 1s ease-in-out 2;
+}
+
+.defend1{
+    animation: spin 1s ease-in-out 2;
+}
+
+@keyframes veryweak {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes weak {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.3);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes medium {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes strong {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.7);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes massive {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes gobackward {
+    0% {transform: scale(1);}
+    20% {transform: scale(0.6) rotate(-15deg);}
+    40% {transform: scale(0.6) rotate(15deg);}
+    60% {transform: scale(0.6) rotate(0deg);}
+    80% {transform: scale(0.6);}
+    100% {transform: scale(1);}
+}
+
+@keyframes shake {
+    0% {transform: translateX(0px);}
+    20% {transform: translateX(-10px);}
+    40% {transform: translateX(10px);}
+    60% {transform: translateX(-5px);}
+    80% {transform: translateX(5px);}
+    100% {transform: translateX(0px);}
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);} 
+}
+
+/* resposive design */
+
+@media (max-width: 950px) {
+
+    body {
+        position: relative;
+        flex-direction: row;
+    }   
+
+    .title {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #game {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 20px;
+        height: 650px;
+        width: 1100px;
+        gap: 0;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        width: 146px;
+        height: 198px;
+        margin: 0;
+    }
+
+    .player1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .player2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        padding: 0;
+    }
+
+    #action {
+        height: 50%;
+        margin-right: 20px;
+    }
+
+    #messages p {
+        margin-bottom: 20px;
+    }
+}

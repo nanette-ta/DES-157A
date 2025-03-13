@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game on Final Version</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class= "title">
+        <h1>Battle of the Smiskis!</h1>
+    </div>
+
+    <section id="game">
+        <div class="player1">
+            <div class="health">
+                <div id="healthbar0">
+                    <p id="smiskihealth0">100%</p>
+                </div>
+            </div>
+
+            <img src="./images/Smiski1WithTransparentBG.png" alt="Player 1" width="300" height="376" id="Thumbs-Up-Smiski">
+            <div class="test1">
+                <h2>Player 1: Thumbs Up Smiski</h2>
+                <p>Attack: Affirmations</p>
+            </div>
+        </div>
+
+        <div class="vs">
+            <h1>Vs</h1>
+        </div>
+
+        <div class="player2">
+            <div class="health">
+                <div id="healthbar1">
+                    <p id="smiskihealth1">100%</p>
+                </div>
+            </div>
+
+            <img src="./images/Smiski2WithTransparentBG.png" alt="Player 2" width="300" height="376" id="Cat-Smiski">
+            <div class="test1">
+                <h2>Player 2: Cat with Smiski</h2>
+                <p>Attack: Cat Biscuits</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="action">
+        <div id="messages">
+            <p>Press the start button to randomly select the first Smiski to attack!</p>
+            <button id="start">Start The Battle!</button>
+        </div>
+        <button id="attack" class="hidden">Attack!</button>
+    </section>
+</body>
+</html>
