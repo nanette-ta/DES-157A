@@ -21,16 +21,16 @@
 		health: [100, 100],
 		attack: [5, 15, 25, 30, 40],
         attackMessage: [
-            'a very weak attack! 5 hit points!',
+            'a super weak attack! 5 hit points!',
             'a weak attack for only 15 hit points!',
             'an attack of 25 hit points!',
-            'a big attack for 30 hit points',
+            'a huge attack for 30 hit points',
             'a massive attack! woah! 40 hit points!'
         ],
 		defendMessage: [
             'no defense, hit!', 
-            'some defense, partial hit', 
-            'total defense, no hit!'
+            'partial defense, hit', 
+            'complete defense, no hit!'
         ],
 		index: 0
 	};
