@@ -1,9 +1,15 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     font-family: Silkscreen;
     color: #ffffff;
     text-align: center;
     background-color: #222222;
-    padding-top: 20px;
+    /* padding-top: 20px; */
+    overflow: hidden;
 }
 
 #container {
@@ -12,7 +18,7 @@ body {
     overflow: hidden;
     position: relative;
     margin: auto;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 #container div {
@@ -122,4 +128,19 @@ body {
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+button#close {
+    color: white;
+    font-family: Silkscreen;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: inherit;
+    border: 1px inherit;
+    border-radius: 10px;
+}
+
+button#close:hover {
+    color: rgb(177, 12, 12);
 }

@@ -10,7 +10,6 @@
     const bottomleft = document.getElementById('bottomleft'); 
     const bottomright = document.getElementById('bottomright'); 
     const center = document.getElementById('center'); 
-
  
     let thisSpot;
 
@@ -30,27 +29,36 @@
         switch (thisSpot) {
             case 'topleft': 
             theImg.className = 'topleft'; 
-            zoomedContainer.innerHTML = '<img src="./images/smiski.png" <p>Meet my glow in the dark smiskis! Each one has their own unique personality. Do you have a favorite?</p>'; break;
+            zoomedContainer.innerHTML = '<img src="./images/smiski.png"  <p>Meet my glow in the dark smiskis! Each one has their own unique personality. Do you have a favorite?</p> <button id="close">X</button>'; break;
 
             case 'topright': 
             theImg.className = 'topright'; 
-            zoomedContainer.innerHTML = '<img src="./images/mofusand.png" <p>This is my prized mofusand keychain! She was won from a claw machine in Tokyo after many attempts!</p>'; break;
+            zoomedContainer.innerHTML = '<img src="./images/mofusand.png" <p>This is my prized mofusand keychain! She was won from a claw machine in Tokyo after many attempts!</p> <button id="close">X</button>'; break;
 
             case 'bottomleft': 
             theImg.className = 'bottomleft';
-            zoomedContainer.innerHTML = '<img src="./images/polaroid.png" <p>These are my 4lifers! We met in our freshmen year, and have been housemates ever since.</p>'; break;
+            zoomedContainer.innerHTML = '<img src="./images/polaroid.png" <p>These are my 4lifers! We met in our freshmen year, and have been housemates ever since.</p> <button id="close">X</button>'; break;
 
             case 'bottomright': 
             theImg.className = 'bottomright';
-            zoomedContainer.innerHTML = '<img src="./images/matcha.png" <p>My latest caffine addiction is matcha. I bought this one in Uji, Kyoto during the summer!</p>'; break;
+            zoomedContainer.innerHTML = '<img src="./images/matcha.png" <p>My latest caffine addiction is matcha. I bought this one in Uji, Kyoto during the summer!</p> <button id="close">X</button>'; break;
 
             case 'center': 
             theImg.className = 'center';
-            zoomedContainer.innerHTML = '<img src="./images/bows.png" <p>These bow statement earrings are my favorite pieces of jewelry at the moment!</p>'; break;
+            zoomedContainer.innerHTML = '<img src="./images/bows.png" <p>These bow statement earrings are my favorite pieces of jewelry at the moment!</p> <button id="close">X</button>'; break;
+        }
+
+        const closeButton = document.getElementById('close');
+
+        if (closeButton) {
+            closeButton.addEventListener('click', function() {
+                zoomedContainer.style.display = 'none'; 
+            });
         }
 
         theImg.style.transformOrigin = 'center center';
     }
+
     hotSpots.forEach(function (eachSpot) {
         eachSpot.addEventListener('mouseover', zoomPhoto);
         eachSpot.addEventListener('mouseout', function () {
@@ -75,4 +83,5 @@
             }, 1000);
         }
     });
+
 })();
